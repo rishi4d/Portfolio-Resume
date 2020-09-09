@@ -1,3 +1,23 @@
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #212663;
+}
+
+::-webkit-scrollbar-track{
+    background: black;
+}
+
+::-webkit-scrollbar-track:hover{
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(65, 65, 255);
+}
+
 body, html {
     background-color: #000;
     color: #fff;
@@ -5,10 +25,17 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
+
+.container-fluid{
+    height: 100%;
+}
+
 canvas {
     position:absolute;
     top:0;
-    left:0
+    left:0;
+    height: 100%;
+    width: 100%;
 }
+

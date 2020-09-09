@@ -110,8 +110,8 @@ function ShootingStar() {
 ShootingStar.prototype.reset = function () {
     this.x = Math.random() * width;
     this.y = 0;
-    this.len = (Math.random() * 80) + 10;
-    this.speed = (Math.random() * 10) + 6;
+    this.len = (Math.random() * 60) + 8;
+    this.speed = (Math.random() * 5) + 5;
     this.size = (Math.random() * 1) + 0.1;
     // this is used so the shooting stars arent constant
     this.waitTime = new Date().getTime() + (Math.random() * 3000) + 500;
@@ -141,7 +141,7 @@ ShootingStar.prototype.update = function () {
 var entities = [];
 
 // init the stars
-for (var i = 0; i < height; i++) {
+for (var i = 0; i < height-350; i++) {
     entities.push(new Star({
         x: Math.random() * width,
         y: Math.random() * height
