@@ -1,6 +1,7 @@
 //Loader
 function execloader(){
-    setTimeout(showPage, 3600);
+    setTimeout(showPage, 00);
+    setTimeout(loadjq, 00);
 }
 
 //JS Driver
@@ -8,6 +9,7 @@ function showPage(){
     
     document.getElementById("loader").style.display = "none";
     document.getElementById("main").style.display = "block";
+    document.getElementById("intro").style.display = "block";
 
     //Canvas Animation
     (function () {
@@ -165,7 +167,7 @@ function showPage(){
     entities.push(new ShootingStar());
     entities.push(new Terrain({mHeight : (height/2)-120}));
     entities.push(new Terrain({displacement : 120, scrollDelay : 50, fillStyle : "rgb(17,20,40)", mHeight : (height/2)-60}));
-    entities.push(new Terrain({displacement : 100, scrollDelay : 20, fillStyle : "rgb(10,10,5)", mHeight : height/2}));
+    entities.push(new Terrain({displacement : 100, scrollDelay : 20, fillStyle : "rgb(0,0,0)", mHeight : height/2}));
 
     //animate background
     function animate() {
@@ -183,3 +185,11 @@ function showPage(){
     }
     animate();
 }
+
+//jQuery
+function loadjq(){
+    $(document).ready(function(){
+        $("#intro").css({top:'85%'}).animate({top:'75%', opacity:'1'}, 1200);
+    });
+}
+
