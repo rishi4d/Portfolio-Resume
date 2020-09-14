@@ -17,9 +17,9 @@
         font-size: 52px !important;
     }
     
-    #intro h6{
+    .typerTarget{
         letter-spacing: 2px;
-        font-size: 14px !important;
+        font-size: 20px !important;
     }
 }
 
@@ -42,9 +42,9 @@
         font-size: 45px !important;
     }
     
-    #intro h6{
+    .typerTarget{
         letter-spacing: 1px;
-        font-size: 13px !important;
+        font-size: 19px !important;
     }
 }
 
@@ -198,10 +198,11 @@ canvas {
     top: 75%;
     left: 8%;
     z-index: 1;
-    color: rgb(0, 138, 230);
+    color: rgb(0, 135, 224);
 }
 
 #namaste{
+    position: static;
     padding-left: 8px;
     font-size: 58px !important;
     font-family: "Satisfy" !important;
@@ -212,16 +213,11 @@ canvas {
 }
 
 #intro h1{
+    position: static;
     font-family: "Comfortaa";
     font-size: 58px;
 }
 
-#intro h6{
-    padding-left: 4px;
-    font-family: "Raleway";
-    letter-spacing: 2px;
-    font-size: 16px;
-}
 /*
 #contact{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -241,3 +237,38 @@ canvas {
     color:  rgb(53, 67, 255);
 }
 */
+
+@keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+}
+  
+.typerTarget {
+    border-right: 1px solid #404145;
+    -webkit-animation: blink-caret 0.5s step-end infinite alternate;
+            animation: blink-caret 0.5s step-end infinite alternate;
+}
+  
+.typerTarget {
+    padding-left: 4px;
+    font-family: "Raleway";
+    letter-spacing: 2px;
+    font-size: 24px;
+    animation: blink-caret 0.5s step-end infinite alternate;
+    border-right: 1px solid rgb(0, 135, 224);
+    color: inherit;
+    margin: 0;
+    display: inline-block;
+}
+
+#workaround{
+    font-size: 24px;
+    margin: 0;
+}
