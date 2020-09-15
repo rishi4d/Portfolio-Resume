@@ -198,7 +198,7 @@ canvas {
     top: 75%;
     left: 8%;
     z-index: 1;
-    color: rgb(0, 135, 224);
+    color:deepskyblue;
 }
 
 #namaste{
@@ -262,7 +262,7 @@ canvas {
     letter-spacing: 2px;
     font-size: 24px;
     animation: blink-caret 0.5s step-end infinite alternate;
-    border-right: 1px solid rgb(0, 135, 224);
+    border-right: 2px solid deepskyblue;
     color: inherit;
     margin: 0;
     display: inline-block;
