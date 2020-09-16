@@ -274,7 +274,48 @@ canvas {
     margin: 0;
 }
 
+/* ANIMATION CONFIG */
+
+.hidden{
+    opacity: 0;
+}
+
+.slup{
+    opacity: 1;
+    animation-name: slideup;
+    -webkit-animation-name: slideup;
+    animation-duration: .9s;
+    -webkit-animation-duration: .9s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes slideup{
+    0%{
+        opacity: 0;
+        transform: translateY(15%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideup{
+    0%{
+        opacity: 0;
+        transform: translateY(15%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/* SECOND SECTION */
+
 #welcome{
+    position: relative;
     height: 50%;
     padding: 0 30%;
 }
@@ -303,6 +344,8 @@ canvas {
     font-size: 24px;
     padding-top: 10px;
 }
+
+/* THIRD SECTION */
 
 #pf-item > h3{
     padding-top: 5%;
@@ -334,8 +377,39 @@ canvas {
     color: rgb(170, 0, 0);
 }
 
-.fa-bolt{
+.fa-fighter-jet{
     color: rgb(0, 146, 214);
+}
+
+/* FOURTH SECTION */
+
+#lg{
+    height: 35%;
+    width: 100%;
+    padding-top: 5%;
+}
+
+#lg > .row {
+    position: relative;
+    width: 100%;
+}
+
+#lg > .row > div > #txt > h2{
+    color: rgb(215, 215, 215);
+    font-family: "Quicksand", sans-serif;
+    font-size: 45px;
+}
+
+#lg > .row > div > #icons{
+    padding-top: 5%;
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    font-size: 60px;
+}
+
+#lg > .row > div > #icons > i{
+    padding: 2%;
 }
 
 /* Media Queries */
@@ -387,7 +461,7 @@ canvas {
     
     #pf-item > p{
         padding-top: 0%;
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -438,7 +512,7 @@ canvas {
     }
     
     #pf-item > p{
-        font-size: 15px;
+        font-size: 16px;
         padding-top: 0%;
 
     }
@@ -470,7 +544,7 @@ canvas {
     }
 
     #pf-item{
-        padding: 1% 10%; 
+        padding: 2% 10%; 
     }
 
     #pf-item > i{
@@ -528,7 +602,7 @@ canvas {
 
     #pf > .row{
         margin: 0;
-        padding: 5%;
+        padding: 5% 5% 3% 5%;
         border-radius: 45px;
     }
 
@@ -564,12 +638,12 @@ canvas {
     }
 
     #pf-item{
-        padding: 3% 3%; 
+        padding: 3%;
     }
 
     #pf > .row{
         margin: 0 10%;
-        padding: 3%;
+        padding: 2% 3% 0% 3%;
         border-radius: 50px;
     }
 
@@ -578,7 +652,7 @@ canvas {
     }
 
     #pf-item > h3{
-        padding-top: 8%;
+        padding-top: 15%;
         font-size: 28px;
     }
     
@@ -595,11 +669,12 @@ canvas {
 
     #pf > .row{
         margin: 0 12%;
-        padding: 2% 3%;
+        padding: 2% 3% 1% 3%;
         border-radius: 50px;
     }
 
     #pf-item > h3{
+        padding-top: 15%;
         font-size: 30px;
     }
     

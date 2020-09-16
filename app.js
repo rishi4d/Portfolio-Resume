@@ -347,6 +347,19 @@ function loadjq(){
         $("#intro").css({top:'82%'}).animate({top:'75%', opacity:'1'}, 1000, "swing", function(){
         });
     });
+
+    $(window).scroll(function () {
+        $(".aos").each(function () {
+            var imagePos = $(this).offset().top;
+            var windowHeight = $(window).height() * 0.9;
+            var topOfWindow = $(window).scrollTop();
+    
+            if (imagePos < topOfWindow + windowHeight) {
+                $(this).addClass("slup");
+            }
+        });
+    });
+
 }
 
 /* CUSTOM TYPING CODE
