@@ -360,6 +360,10 @@ function loadjq(){
         });
     });
 
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
 }
 
 /* CUSTOM TYPING CODE

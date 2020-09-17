@@ -177,7 +177,6 @@ body,html{
     height: 100%;
 }
 
-
 #main{
     display: none;
 }
@@ -384,13 +383,17 @@ canvas {
 /* FOURTH SECTION */
 
 #lg{
-    height: 35%;
+    height: 25%;
     width: 100%;
-    padding-top: 5%;
+    margin: 0;
 }
 
 #lg > .row {
-    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+#lg > .row > div > #txt{
     width: 100%;
 }
 
@@ -401,15 +404,48 @@ canvas {
 }
 
 #lg > .row > div > #icons{
-    padding-top: 5%;
     position: absolute;
-    left: 5%;
-    width: 90%;
-    font-size: 60px;
+    color: rgb(35, 40, 40);
 }
 
-#lg > .row > div > #icons > i{
-    padding: 2%;
+#lg > .row > div > #icons > .fa-html5:hover{
+    color: rgb(230, 116, 22);
+}
+
+#lg > .row > div > #icons > .fa-css3:hover{
+    color: rgb(33, 98, 236);
+}
+
+#lg > .row > div > #icons > .fa-js-square:hover{
+    color: #F0DB4F;
+}
+
+#lg > .row > div > #icons > .fa-bootstrap:hover{
+    color: rgb(112, 52, 190);
+}
+
+#lg > .row > div > #icons > .fa-node:hover{
+    color: rgb(0, 170, 0);
+}
+
+#lg > .row > div > #icons > .fa-php:hover{
+    color: rgb(212, 0, 219);
+}
+
+#lg > .row > div > #icons > .fa-laravel:hover{
+    color: rgb(255, 123, 0);
+}
+
+#lg > .row > div > #icons > .fa-react:hover{
+    color:rgb(135, 170, 235);
+}
+
+#lg > .row > div > #icons > .fa-java:hover{
+    color: rgb(255, 0, 0);
+}
+
+#lg > .row > div > #icons > .fa-android:hover{
+    color: #a4c639;
 }
 
 /* Media Queries */
@@ -463,6 +499,25 @@ canvas {
         padding-top: 0%;
         font-size: 15px;
     }
+
+    #lg{
+        margin-top: 20%;
+    }
+
+    #lg > .row > div > #txt > h2{
+        font-size: 35px;
+    }
+
+    #lg > .row > div > #icons{
+        padding-top: 4%;
+        position: absolute;
+        width: 100%;
+        font-size: 40px;
+    }
+    
+    #lg > .row > div > #icons > i{
+        padding: 3%;
+    }
 }
 
 @media(min-width: 576px){
@@ -506,7 +561,7 @@ canvas {
     } 
 
     #pf-item > h3{
-        font-size: 25px;
+        font-size: 24px;
         padding-top: 3%;
 
     }
@@ -515,6 +570,25 @@ canvas {
         font-size: 16px;
         padding-top: 0%;
 
+    }
+
+    #lg{
+        margin-top: 18%;
+    }
+
+    #lg > .row > div > #txt > h2{
+        font-size: 35px;
+    }
+
+    #lg > .row > div > #icons{
+        padding-top: 4%;
+        position: absolute;
+        width: 100%;
+        font-size: 45px;
+    }
+    
+    #lg > .row > div > #icons > i{
+        padding: 1%;
     }
 }
 
@@ -559,12 +633,31 @@ canvas {
 
     #pf-item > h3{
         padding-top: 5%;
-        font-size: 28px;
+        font-size: 25px;
     }
     
     #pf-item > p{
         padding-top: 1%;
         font-size: 18px;
+    }
+
+    #lg{
+        margin-top: 16%;
+    }
+
+    #lg > .row > div > #txt > h2{
+        font-size: 40px;
+    }
+
+    #lg > .row > div > #icons{
+        padding-top: 4%;
+        position: absolute;
+        width: 100%;
+        font-size: 50px;
+    }
+    
+    #lg > .row > div > #icons > i{
+        padding: 1%;
     }
 }
 
@@ -608,12 +701,31 @@ canvas {
 
     #pf-item > h3{
         padding-top: 5%;
-        font-size: 28px;
+        font-size: 26px;
     }
     
     #pf-item > p{
         padding-top: 1%;
         font-size: 18px;
+    }
+
+    #lg{
+        margin-top: 12%;
+    }
+
+    #lg > .row > div > #txt > h2{
+        font-size: 44px;
+    }
+
+    #lg > .row > div > #icons{
+        padding-top: 2%;
+        position: absolute;
+        width: 100%;
+        font-size: 60px;
+    }
+    
+    #lg > .row > div > #icons > i{
+        padding: 1.5%;
     }
 }
 
@@ -660,6 +772,20 @@ canvas {
         padding-top: 1%;
         font-size: 18px;
     }
+
+    #lg{
+        margin-top: 8%;
+    }
+
+    #lg > .row > div > #icons{
+        padding-top: 1%;
+        width: 100%;
+        font-size: 70px;
+    }
+    
+    #lg > .row > div > #icons > i{
+        padding: 1.5%;
+    }
 }
 
 @media(min-width: 1600px){
@@ -680,5 +806,19 @@ canvas {
     
     #pf-item > p{
         font-size: 20px;
+    }
+
+    #lg{
+        margin-top: 6%;
+    }
+
+    #lg > .row > div > #icons{
+        padding-top: 1%;
+        width: 100%;
+        font-size: 70px;
+    }
+    
+    #lg > .row > div > #icons > i{
+        padding: 2%;
     }
 }
