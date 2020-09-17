@@ -183,7 +183,7 @@ function showPage(){
         }
         requestAnimationFrame(animate);
     }
-    animate;
+    animate();
 }
 
 //Autotyper Function
@@ -344,7 +344,7 @@ typer.start();
 //jQuery
 function loadjq(){
     $(document).ready(function(){
-        $("#intro").css({top:'82%'}).animate({top:'75%', opacity:'1'}, 1000, "swing", function(){
+        $("#intro").css({top:'82%'}).animate({top:'75%', opacity:'1'}, 800, "swing", function(){
         });
     });
 
