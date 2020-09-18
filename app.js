@@ -183,7 +183,7 @@ function showPage(){
         }
         requestAnimationFrame(animate);
     }
-    animate();
+    animate;
 }
 
 //Autotyper Function

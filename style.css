@@ -413,7 +413,7 @@ canvas {
 
 #lg > .row > div > #icons{
     position: absolute;
-    color: rgb(53, 59, 61);
+    color: rgb(46, 50, 50);
 }
 
 #lg > .row > div > #icons > .fa-html5:hover{
@@ -425,7 +425,7 @@ canvas {
 }
 
 #lg > .row > div > #icons > .fa-js-square:hover{
-    color: #d6e600;
+    color: #c1cf00;
 }
 
 #lg > .row > div > #icons > .fa-bootstrap:hover{
@@ -454,6 +454,57 @@ canvas {
 
 #lg > .row > div > #icons > .fa-android:hover{
     color: #a4c639;
+}
+
+/* FIFTH SECTION */
+
+hr{
+    background-color: rgb(37, 75, 145);
+    margin: 5% 10%;
+    border-radius: 5px;
+}
+
+#work{
+    margin-top: 8%;
+}
+
+#work > .row > div > h2{
+    color: rgb(215, 215, 215);
+    font-family: "Quicksand", sans-serif;
+    font-size: 45px;}
+
+#work-item{
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.customcard{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 260px;
+    width: 360px;
+}
+
+#card1{
+    background-image: url(img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px solid royalblue;
+}
+
+#card2{
+    background-image: url(img/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px solid royalblue;
+}
+
+#card1 > p{
+    color: silver;
+}
+
+#card2 > p{
+    color: silver;
 }
 
 
@@ -511,6 +562,7 @@ canvas {
 
     #lg{
         margin-top: 15%;
+        margin-bottom: 15%;
     }
 
 
@@ -528,6 +580,10 @@ canvas {
     #lg > .row > div > #icons > i{
         padding-top: 1%;
         margin: 3%;
+    }
+
+    hr{
+        margin: 0;
     }
 }
 
@@ -585,6 +641,7 @@ canvas {
 
     #lg{
         margin-top: 15%;
+        margin-bottom: 10%;
     }
 
     #lg > .row > div > #txt > h2{
@@ -601,6 +658,10 @@ canvas {
     #lg > .row > div > #icons > i{
         padding-top: 3%;
         margin: 1%;
+    }
+
+    hr{
+        margin: 5% 10%;
     }
 }
 
@@ -655,6 +716,7 @@ canvas {
 
     #lg{
         margin-top: 16%;
+        margin-bottom: 5%;
     }
 
     #lg > .row > div > #txt > h2{
@@ -724,6 +786,7 @@ canvas {
 
     #lg{
         margin-top: 12%;
+        margin-bottom: 5%;
     }
 
     #lg > .row > div > #txt > h2{
@@ -789,6 +852,7 @@ canvas {
 
     #lg{
         margin-top: 8%;
+        margin-bottom: 4%;
     }
 
     #lg > .row > div > #icons{
@@ -825,6 +889,7 @@ canvas {
 
     #lg{
         margin-top: 7%;
+        margin-bottom: 3%;
     }
 
     #lg > .row > div > #icons{
