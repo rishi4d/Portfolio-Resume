@@ -505,14 +505,19 @@ hr{
 }
 
 .bg-one{
+    min-height: 100%;
     background-image: url(img/img1.jpg);
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(255, 0, 0, 0.651)
 }
 
 .bg-two{
+    min-height: 100%;
     background-image: url(img/img2.jpg);
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 102, 255, 0.651)
+
 }
-
-
 
 
 /* Media Queries */
