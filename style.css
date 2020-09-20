@@ -471,41 +471,48 @@ hr{
 #work > .row > div > h2{
     color: rgb(215, 215, 215);
     font-family: "Quicksand", sans-serif;
-    font-size: 45px;}
+    font-size: 45px;
+}
 
 #work-item{
     margin-top: 5%;
+}
+
+.parentcard{
+    margin: 0 5%;
+}
+
+.childtop{
     overflow: hidden;
 }
 
-.customcard{
-    border-radius: 20px;
+.childcard{
+    transition: all ease .4s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
-    height: 260px;
-    width: 360px;
 }
 
-#card1{
+.childcard > p{
+    color: silver;
+}
+
+.childcard:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.bg-one{
     background-image: url(img/img1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0px solid royalblue;
 }
 
-#card2{
+.bg-two{
     background-image: url(img/img2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0px solid royalblue;
 }
 
-#card1 > p{
-    color: silver;
-}
 
-#card2 > p{
-    color: silver;
-}
 
 
 /* Media Queries */
@@ -585,6 +592,34 @@ hr{
     hr{
         margin: 0;
     }
+
+    #work{
+        margin-top: 16%;
+    }
+
+    #work > .row > div > h2{
+        font-size: 35px;}
+
+    #work-item{
+        margin-top: 15%;
+    }
+
+    .parentcard{
+        border-radius: 10px;
+        margin: 0;
+        padding: 3% 1%;
+    }
+    
+    .childtop{
+        border-radius: 10px;
+    }    
+
+    .childcard{
+        height: 60vw;
+        width: 100%;
+        border-radius: 10px;
+    }
+
 }
 
 @media(min-width: 576px){
@@ -663,6 +698,34 @@ hr{
     hr{
         margin: 5% 10%;
     }
+   
+    #work{
+        margin-top: 16%;
+    }
+
+    #work > .row > div > h2{
+        font-size: 35px;
+    }
+
+    #work-item{
+        margin-top: 15%;
+    }
+
+    .parentcard{
+        border-radius: 15px;
+        margin: 0;
+        padding: 3% 1%;
+    }
+    
+    .childtop{
+        border-radius: 15px;
+    }    
+
+    .childcard{
+        height: 60vw;
+        width: 100%;
+        border-radius: 15px;
+    }
 }
 
 @media(min-width: 768px){
@@ -734,6 +797,34 @@ hr{
         padding-top: 0%;
         margin: 1%;
     }
+
+    #work{
+        margin-top: 16%;
+    }
+
+    #work > .row > div > h2{
+        font-size: 40px;
+    }
+
+    #work-item{
+        margin-top: 8%;
+    }
+
+    .parentcard{
+        border-radius: 15px;
+        margin: 0;
+        padding: 0% 1%;
+    }
+    
+    .childtop{
+        border-radius: 15px;
+    }    
+
+    .childcard{
+        height: 32vw;
+        width: 45vw;
+        border-radius: 15px;
+    }
 }
 
 @media(min-width: 992px){
@@ -804,6 +895,35 @@ hr{
         padding-top: 0%;
         margin: 1.5%;
     }
+    
+    #work{
+        margin-top: 15%;
+    }
+
+    #work > .row > div > h2{
+        font-size: 44px;
+    }
+
+    #work-item{
+        margin-top: 10%;
+    }
+
+    .parentcard{
+        border-radius: 20px;
+        margin: 0;
+        padding: 0% 1.5%;
+    }
+    
+    .childtop{
+        border-radius: 20px;
+    }    
+
+    .childcard{
+        height: 32vw;
+        width: 45vw;
+        border-radius: 20px;
+    }
+
 }
 
 @media(min-width: 1200px){
@@ -855,6 +975,10 @@ hr{
         margin-bottom: 4%;
     }
 
+    #lg > .row > div > #txt > h2{
+        font-size: 48px;
+    }
+
     #lg > .row > div > #icons{
         padding-top: 1%;
         width: 100%;
@@ -865,9 +989,43 @@ hr{
         padding-top: 0%;
         margin: 1.5%;
     }
+
+    #work{
+        margin-top: 8%;
+    }
+
+    #work > .row > div > h2{
+        font-size: 48px;
+    }
+
+    #work-item{
+        margin-top: 5%;
+    }
+
+    .parentcard{
+        border-radius: 25px;
+        padding: 0% 3%;
+    }
+    
+    .childtop{
+        border-radius: 25px;
+    }    
+
+    .childcard{
+        height: 300px;
+        width: 430px;
+        border-radius: 25px;
+    }
+
 }
 
 @media(min-width: 1600px){
+
+    #welcome > .row > .col-12 > h2{
+        padding-top: 10px;
+        font-size: 50px;
+    }
+
     #pf-item > i{
         font-size: 100px;
     }
@@ -901,5 +1059,36 @@ hr{
     #lg > .row > div > #icons > i{
         padding-top: 0%;
         margin: 2%;
+    }
+
+    #lg > .row > div > #txt > h2{
+        font-size: px;
+    }
+
+    #work{
+        margin-top: 9%;
+    }
+
+    #work > .row > div > h2{
+        font-size: 50px;
+    }
+
+    #work-item{
+        margin-top: 5%;
+    }
+
+    .parentcard{
+        border-radius: 25px;
+        padding: 0% 4%;
+    }
+    
+    .childtop{
+        border-radius: 25px;
+    }    
+
+    .childcard{
+        height: 310px;
+        width: 440px;
+        border-radius: 25px;
     }
 }
