@@ -279,6 +279,7 @@ canvas {
     opacity: 0;
 }
 
+
 .slup{
     opacity: 1;
     animation-name: slideup;
@@ -332,7 +333,7 @@ canvas {
 }
 
 #welcome > .row > .col-12 > h2{
-    color: rgb(215, 215, 215);
+    color: rgb(210, 210, 210);
     font-family: "Quicksand", sans-serif;
     font-size: 45px;
 }
@@ -406,7 +407,7 @@ canvas {
 }
 
 #lg > .row > div > #txt > h2{
-    color: rgb(215, 215, 215);
+    color: rgb(205, 205, 205);
     font-family: "Quicksand", sans-serif;
     font-size: 45px;
 }
@@ -466,12 +467,18 @@ hr{
 
 #work{
     margin-top: 8%;
+    height: fit-content;
 }
 
 #work > .row > div > h2{
-    color: rgb(215, 215, 215);
+    color: rgb(205, 205, 205);
     font-family: "Quicksand", sans-serif;
     font-size: 45px;
+}
+
+#work > .row > div > h4{
+    color: rgb(180, 180, 180);
+    font-family: "Raleway", sans-serif;
 }
 
 #work-item{
@@ -480,6 +487,7 @@ hr{
 
 .parentcard{
     margin: 0 5%;
+    position: relative;
 }
 
 .childtop{
@@ -487,36 +495,192 @@ hr{
 }
 
 .childcard{
-    transition: all ease .4s;
+    transition: all ease-in-out .4s;
+    -webkit-transition:  all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     overflow: hidden;
+    position: relative;
+    z-index: 0.5;
 }
 
-.childcard > p{
-    color: silver;
+.childcard > .txt{
+    position: absolute;
+    transition: opacity ease-in 0.4s;
+    opacity: 0;
+    z-index: 1;
+    height: inherit;
+    width: inherit;
+    font-family: "Poiret One", sans-serif;
+    transform: translate(0,0);
+}
+
+.childcard > a{
+    margin-top: 3%;
+    left: 88%;
+    position: absolute;
+    transition: opacity ease-in 0.4s;
+    opacity: 0;
+    z-index: 1;
+    font-size: 24px;
+    padding: 2px 7px;
+}
+
+.childcard:hover .txt{
+    opacity: 1;
+    z-index: 1;
+}
+
+.childcard:hover a{
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.childcard > a:hover{
+    opacity: .9;
+}
+
+.childcard::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition:  all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    z-index: -1;
+}
+
+.childcard:hover::after{
+    opacity: 1;
 }
 
 .childcard:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.1);
+    background-size: 130% 130%;
 }
 
 .bg-one{
     min-height: 100%;
     background-image: url(img/img1.jpg);
-    background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 0, 0, 0.651)
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.5);
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+
+.bg-one > a{
+    background-color: rgba(153, 10, 10, 0.6) ;
+    color: rgb(207, 65, 65);
+}
+
+.bg-one > a:hover{
+    color: red;
+    background-color: rgb(104, 0, 0);
+}
+
+.bg-one::after{
+    background-color: rgb(187, 23, 23);
+    z-index: -1;
 }
 
 .bg-two{
     min-height: 100%;
     background-image: url(img/img2.jpg);
-    background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(0, 102, 255, 0.651)
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 95, 238, 0.5);
+    z-index: 1;
+    color: whitesmoke;
+}
 
+.bg-two::after{
+    background-color: rgb(31, 109, 197);
+    z-index: -1;
+}
+
+.bg-two > a{
+    background-color: rgba(35, 35, 128, 0.5);
+    color: rgb(124, 122, 255);
+}
+
+.bg-two > a:hover{
+    color: dodgerblue;
+    background-color: darkblue;
+}
+
+#work > .row > div > h3{
+    color: rgb(200, 200, 200);
+    font-family: "Quicksand", sans-serif;
+}
+
+#work > .row > div > a{
+    border: 2px solid rgb(30, 90, 255);
+    color: rgb(30, 90, 255);
+    font-family: "Roboto", sans-serif;
+}
+
+#work > .row > div > a:hover{
+    background-color: rgb(30, 90, 255);
+    color: rgb(160, 228, 255);
+}
+
+.footer{
+    height: 36%;
+    width: 100%;
+    background-color:rgb(75, 83, 196);
+}
+
+#aequote{
+    font-family: "Poppins", sans-serif;
+    color: silver;
+}
+
+#socialicons > a{
+    padding: 0 5px;
+    color:rgb(120, 174, 236);
+}
+
+#socialicons > a > i{
+    border: 1px solid rgb(75, 83, 196);
+    border-radius: 50%;
+    text-align: center;
+}
+
+#socialicons > a > i:hover{
+    background-color: lightgray;
+}
+
+#copyri8{
+    font-family: "Poppins", sans-serif;
+    color: silver;
+}
+
+.fa-twitter:hover{
+    color:  #00acee;
+}
+
+.fa-linkedin-in:hover{
+    color: #0e76a8;
+}
+
+.fa-google-plus-g:hover{
+    color: #db4a39;
+}
+
+.fa-github:hover{
+    color: #4078c0;
+}
+
+.fa-telegram-plane:hover{
+    color: #0088cc;
+}
+
+.fa-envelope:hover{
+    color: dodgerblue;
 }
 
 
@@ -599,14 +763,20 @@ hr{
     }
 
     #work{
-        margin-top: 16%;
+        margin-top: 15%;
     }
 
     #work > .row > div > h2{
-        font-size: 35px;}
+        font-size: 35px;
+    }
+
+    #work > .row > div > h4{
+        margin-top: 4%;
+        font-size: 18px;
+    }
 
     #work-item{
-        margin-top: 15%;
+        margin-top: 13%;
     }
 
     .parentcard{
@@ -623,6 +793,53 @@ hr{
         height: 60vw;
         width: 100%;
         border-radius: 10px;
+    }
+
+    .childcard > .txt{
+        font-size: 32px;
+        top: 31%;
+    }
+
+    .childcard > a{
+        margin-top: 3%;
+        left: 88%;
+        border-radius: 10px;
+    }
+
+    #work > .row > div > h3{
+        margin-top: 10%;
+        font-size: 27px;
+    }
+
+    #work > .row > div > a{
+        margin-top: 5%;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    .footer{
+        margin-top: 15%;
+    }
+
+    #aequote{
+        margin-top: 15%;
+        font-size: 28px;
+    }
+
+    #socialicons{
+        margin-top: 4%;
+        font-size: 36px;
+    }
+
+    #socialicons > a > i{
+        width: 54px;
+        height: 54px;
+        padding-top: 9px;
+    }
+
+    #copyri8{
+        padding-top: 10%;
+        font-size: 18px;
     }
 
 }
@@ -712,8 +929,13 @@ hr{
         font-size: 35px;
     }
 
+    #work > .row > div > h4{
+        margin-top: 4%;
+        font-size: 18px;
+    }
+
     #work-item{
-        margin-top: 15%;
+        margin-top: 12%;
     }
 
     .parentcard{
@@ -730,6 +952,54 @@ hr{
         height: 60vw;
         width: 100%;
         border-radius: 15px;
+    }
+
+    .childcard > .txt{
+        font-size: 30px;
+        top: 36%;
+    }
+
+    .childcard > a{
+        margin-top: 3%;
+        left: 91%;
+        font-size: 25px;
+        border-radius: 11px;
+    }
+
+    #work > .row > div > h3{
+        margin-top: 10%;
+        font-size: 30px;
+    }
+
+    #work > .row > div > a{
+        margin-top: 5%;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+
+    .footer{
+        margin-top: 15%;
+    }
+
+    #aequote{
+        margin-top: 12%;
+        font-size: 28px;
+    }
+
+    #socialicons{
+        margin-top: 3%;
+        font-size: 36px;
+    }
+
+    #socialicons > a > i{
+        width: 54px;
+        height: 54px;
+        padding-top: 9px;
+    }
+
+    #copyri8{
+        padding-top: 8%;
+        font-size: 18px;
     }
 }
 
@@ -811,6 +1081,11 @@ hr{
         font-size: 40px;
     }
 
+    #work > .row > div > h4{
+        margin-top: 3%;
+        font-size: 20px;
+    }
+
     #work-item{
         margin-top: 8%;
     }
@@ -829,6 +1104,54 @@ hr{
         height: 32vw;
         width: 45vw;
         border-radius: 15px;
+    }
+
+    .childcard > .txt{
+        font-size: 24px;
+        top: 31%;
+    }
+
+    .childcard > a{
+        margin-top: 3%;
+        left: 87%;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+
+    #work > .row > div > h3{
+        margin-top: 9%;
+        font-size: 30px;
+    }
+
+    #work > .row > div > a{
+        margin-top: 4%;
+        font-size: 21px;
+        border-radius: 20px;
+    }
+
+    .footer{
+        margin-top: 11%;
+    }
+
+    #aequote{
+        margin-top: 11%;
+        font-size: 28px;
+    }
+
+    #socialicons{
+        margin-top: 2%;
+        font-size: 36px;
+    }
+
+    #socialicons > a > i{
+        width: 54px;
+        height: 54px;
+        padding-top: 9px;
+    }
+
+    #copyri8{
+        padding-top: 6%;
+        font-size: 18px;
     }
 }
 
@@ -909,8 +1232,13 @@ hr{
         font-size: 44px;
     }
 
+    #work > .row > div > h4{
+        margin-top: 3%;
+        font-size: 20px;
+    }
+
     #work-item{
-        margin-top: 10%;
+        margin-top: 8%;
     }
 
     .parentcard{
@@ -927,6 +1255,54 @@ hr{
         height: 32vw;
         width: 45vw;
         border-radius: 20px;
+    }
+
+    .childcard > .txt{
+        font-size: 28px;
+        top: 33%;
+    }
+
+    .childcard > a{
+        margin-top: 3%;
+        left: 89%;
+        font-size: 23px;
+        border-radius: 13px;
+    }
+
+    #work > .row > div > h3{
+        margin-top: 8%;
+        font-size: 32px;
+    }
+
+    #work > .row > div > a{
+        margin-top: 4%;
+        font-size: 22px;
+        border-radius: 20px;
+    }
+
+    .footer{
+        margin-top: 10%;
+    }
+
+    #aequote{
+        margin-top: 8%;
+        font-size: 28px;
+    }
+
+    #socialicons{
+        margin-top: 1.5%;
+        font-size: 36px;
+    }
+
+    #socialicons > a > i{
+        width: 54px;
+        height: 54px;
+        padding-top: 9px;
+    }
+
+    #copyri8{
+        padding-top: 4%;
+        font-size: 18px;
     }
 
 }
@@ -996,11 +1372,16 @@ hr{
     }
 
     #work{
-        margin-top: 8%;
+        margin-top: 10%;
     }
 
     #work > .row > div > h2{
         font-size: 48px;
+    }
+
+    #work > .row > div > h4{
+        margin-top: 2%;
+        font-size: 22px;
     }
 
     #work-item{
@@ -1020,6 +1401,55 @@ hr{
         height: 300px;
         width: 430px;
         border-radius: 25px;
+    }
+
+    .childcard > .txt{
+        font-size: 30px;
+        top: 31%;
+    }
+
+    .childcard > a{
+        margin-top: 3%;
+        left: 88%;
+        font-size: 24px;
+        border-radius: 14px;
+    }
+
+    #work > .row > div > h3{
+        margin-top: 6%;
+        font-size: 34px;
+    }
+
+    #work > .row > div > a{
+        margin-top: 2.5%;
+        font-size: 23px;
+        border-radius: 20px;
+    }
+
+    .footer{
+        margin-top: 8%;
+        padding: 0 25%;
+    }
+    
+    #aequote{
+        margin-top: 6%;
+        font-size: 30px;
+    }
+
+    #socialicons{
+        margin-top: 1%;
+        font-size: 34px;
+    }
+
+    #socialicons > a > i{
+        width: 56px;
+        height: 56px;
+        padding-top: 11px;
+    }
+
+    #copyri8{
+        padding-top: 2%;
+        font-size: 19px;
     }
 
 }
@@ -1078,8 +1508,13 @@ hr{
         font-size: 50px;
     }
 
+    #work > .row > div > h4{
+        margin-top: 2%;
+        font-size: 22px;
+    }
+
     #work-item{
-        margin-top: 5%;
+        margin-top: 4%;
     }
 
     .parentcard{
@@ -1095,5 +1530,53 @@ hr{
         height: 310px;
         width: 440px;
         border-radius: 25px;
+    }
+
+    .childcard > .txt{
+        font-size: 30px;
+        top: 30%;
+    }
+
+    .childcard > a{
+        margin-top: 3%;
+        left: 88%;
+        font-size: 24px;
+    }
+
+    #work > .row > div > h3{
+        margin-top: 5%;
+        font-size: 35px;
+    }
+
+    #work > .row > div > a{
+        margin-top: 2.5%;
+        font-size: 24px;
+        border-radius: 20px;
+    }
+
+    .footer{
+        margin-top: 7%;
+        padding: 0 25%;
+    }
+
+    #aequote{
+        margin-top: 4.5%;
+        font-size: 32px;
+    }
+
+    #socialicons{
+        margin-top: 1.5%;
+        font-size: 36px;
+    }
+
+    #socialicons > a > i{
+        width: 56px;
+        height: 56px;
+        padding-top: 10px;
+    }
+
+    #copyri8{
+        padding-top: 2%;
+        font-size: 20px;
     }
 }
