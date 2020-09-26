@@ -31,6 +31,10 @@ body{
     top: 50%;
 }
 
+.typeform-widget{
+    height: 350px;
+}
+
 #connect{
     font-family: 'Poppins', sans-serif;
     color: rgb(195, 195, 195);
@@ -165,12 +169,12 @@ body{
 
 @media(min-width: 1200px){
     #main > .row > .col-12 > #text{
-        width: 800px;
+        width: 790px;
         margin-top: 10%;
     }
 
     #connect{
-        width: 800px;
+        width: 790px;
         margin-top: 2.5%;
     }
 
@@ -190,17 +194,115 @@ body{
 
 @media(min-width: 1600px){
     #main > .row > .col-12 > #text{
-        width: 800px;
-        margin-top: 8%;
+        width: 790px;
+        margin-top: 8em;
     }
 
     #connect{
-        width: 800px;
-        margin-top: 2%;
+        width: 790px;
+        margin-top: 2em;
     }
 
     #icons{
         padding-top: 0.3em;
+    }
+
+    #icons > .a1{
+        padding-right: 1.5%;
+    }
+    
+    #icons > .a{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.1),
+only screen and (   min--moz-device-pixel-ratio: 1.1),
+only screen and (     -o-min-device-pixel-ratio: 1.1/1),
+only screen and (        min-device-pixel-ratio: 1.1){ 
+    #main > .row > .col-12 > #text{
+        margin-top: 7.5em;
+    }
+
+    #main > .row > .col-12 > #text >h1{
+        font-size: 44px;
+    }
+
+    #main > .row > .col-12 > #text >p{
+        font-size: 19px;
+    }
+
+    .typeform-widget{
+        height: 330px;
+    }
+
+    #connect{
+        margin-top: 0em;
+    }
+
+    #connect > h2{
+        font-size: 30px;
+    }
+
+    #connect > p{
+        font-size: 19px;
+    }
+
+    #icons{
+        padding-top: .2em;
+        font-size: 30px;
+    }
+
+    #icons > .a1{
+        padding-right: 1.5%;
+    }
+    
+    #icons > .a{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (   min--moz-device-pixel-ratio: 1.25),
+only screen and (     -o-min-device-pixel-ratio: 1.25/1),
+only screen and (        min-device-pixel-ratio: 1.25){ 
+    #main > .row > .col-12 > #text{
+        margin-top: 7em;
+        margin-bottom: 0;
+        width: 780px;
+    }
+
+    #main > .row > .col-12 > #text >h1{
+        font-size: 44px;
+    }
+
+    #main > .row > .col-12 > #text >p{
+        font-size: 17px;
+    }
+
+    .typeform-widget{
+        height: 310px;
+    }
+
+    #connect{
+        margin-top: 0em;
+        width: 780px;
+    }
+
+    #connect > h2{
+        font-size: 28px;
+    }
+
+    #connect > p{
+        font-size: 17px;
+    }
+
+    #icons{
+        font-size: 30px;
     }
 
     #icons > .a1{
