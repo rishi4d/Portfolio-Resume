@@ -271,9 +271,8 @@ only screen and (   min--moz-device-pixel-ratio: 1.25),
 only screen and (     -o-min-device-pixel-ratio: 1.25/1),
 only screen and (        min-device-pixel-ratio: 1.25){ 
     #main > .row > .col-12 > #text{
-        margin-top: 7em;
+        margin-top: 6.5em;
         margin-bottom: 0;
-        width: 780px;
     }
 
     #main > .row > .col-12 > #text >h1{
@@ -285,12 +284,11 @@ only screen and (        min-device-pixel-ratio: 1.25){
     }
 
     .typeform-widget{
-        height: 310px;
+        height: 328px;
     }
 
     #connect{
         margin-top: 0em;
-        width: 780px;
     }
 
     #connect > h2{
