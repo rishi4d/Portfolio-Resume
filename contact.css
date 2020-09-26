@@ -1,42 +1,214 @@
 html{
     height: 100%;
-    background-color: #232b2a;
-
 }
 
 body{
     height: 100%;
-    background-color: #232b2a;
     width: 100%; 
+    background-color: #232b2a;
 }
 
-.container-fluid{
+#main{
     height: 100%;
     width: 100%;
-    background-color: lavenderblush;
 }
 
-.container-fluid > .row{
-    position: relative;
-    height: 100%;
-}
-
-.container-fluid > .row > div{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-
-#text > .row > .col-12 > h1{
-    color: lavenderblush;
-    font-family: Poppins, sans-serif;
+#main > .row > .col-12 > #text > h1{
+    color: rgb(230, 208, 215);
+    font-family: 'Poppins', sans-serif;
     font-size: 50px;
 }
 
-.container-fluid > .typeform-widget{
-    padding-top: 20%;
-    height: 100%;
-    width: 40%;
+#main > .row > .col-12 > #text > p{
+    padding-top: 0.1em;
+    color: rgb(185, 185, 185);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.typeform{
+    width: 100%;
+    top: 50%;
+}
+
+#connect{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(195, 195, 195);
+}
+
+#connect > p{  
+    color: rgb(185, 185, 185);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+#icons{
+    padding-top: 0.3em;
+    font-size: 34px;
+}
+
+.fa-twitter:hover{
+    color:  #00acee;
+}
+
+.fa-linkedin-in:hover{
+    color: #0e76a8;
+}
+
+.fa-github:hover{
+    color: #4078c0;
+}
+
+.fa-envelope:hover{
+    color: rgb(204, 0, 0);
+}
+
+@media(max-width: 768px){
+    #main > .row > .col-12 > #text{
+        width: 84%;
+        margin-top: 15%;
+    }
+
+    #connect{
+        width: 84%;
+        margin-top: 10%;
+    }
+
+    #icons{
+        padding-top: 0.3em;
+    }
+    
+    #icons > .a1{
+        padding-right: 1.5%;
+    }
+    
+    #icons > .a{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
+
+@media(min-width: 768px){
+    #main > .row > .col-12 > #text{
+        width: 86%;
+        margin-top: 12%;
+    }
+
+    #connect{
+        width: 86%;
+        margin-top: 5%;
+    }
+
+    #icons{
+        padding-top: 0.5em;
+    }
+    
+    #icons > .a1{
+        padding-right: 1%;
+    }
+    
+    #icons > .a{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+@media(min-width: 880px){
+    #main > .row > .col-12 > #text{
+        width: 86%;
+        margin-top: 12%;
+    }
+
+    #connect{
+        width: 86%;
+        margin-top: 5%;
+    }
+
+    #icons{
+        padding-top: 0.5em;
+    }
+    
+    #icons > .a1{
+        padding-right: 1%;
+    }
+    
+    #icons > .a{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+@media(min-width: 992px){
+    #main > .row > .col-12 > #text{
+        width: 750px;
+        margin-top: 12%;
+    }
+
+    #connect{
+        width: 750px;
+        margin-top: 5%;
+    }
+
+    #icons{
+        padding-top: 0.5em;
+    }
+    
+    #icons > .a1{
+        padding-right: 1.2%;
+    }
+    
+    #icons > .a{
+        padding-left: 1.2%;
+        padding-right: 1.2%;
+    }
+}
+
+@media(min-width: 1200px){
+    #main > .row > .col-12 > #text{
+        width: 800px;
+        margin-top: 10%;
+    }
+
+    #connect{
+        width: 800px;
+        margin-top: 2.5%;
+    }
+
+    #icons{
+        padding-top: 0.3em;
+    }
+    
+    #icons > .a1{
+        padding-right: 1.5%;
+    }
+    
+    #icons > .a{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
+
+@media(min-width: 1600px){
+    #main > .row > .col-12 > #text{
+        width: 800px;
+        margin-top: 8%;
+    }
+
+    #connect{
+        width: 800px;
+        margin-top: 2%;
+    }
+
+    #icons{
+        padding-top: 0.3em;
+    }
+
+    #icons > .a1{
+        padding-right: 1.5%;
+    }
+    
+    #icons > .a{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
 }
