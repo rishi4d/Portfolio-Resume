@@ -1,7 +1,7 @@
 //Loader
 function execloader(){
-    setTimeout(showPage, 00);
-    setTimeout(loadjq, 00);
+    setTimeout(showPage, 1600);
+    setTimeout(loadjq, 1600);
 }
 
 //JS Driver
@@ -183,7 +183,7 @@ function showPage(){
         }
         requestAnimationFrame(animate);
     }
-    animate;
+    animate();
 }
 
 //Autotyper Function

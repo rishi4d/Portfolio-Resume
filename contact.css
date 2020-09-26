@@ -1,0 +1,42 @@
+html{
+    height: 100%;
+    background-color: #232b2a;
+
+}
+
+body{
+    height: 100%;
+    background-color: #232b2a;
+    width: 100%; 
+}
+
+.container-fluid{
+    height: 100%;
+    width: 100%;
+    background-color: lavenderblush;
+}
+
+.container-fluid > .row{
+    position: relative;
+    height: 100%;
+}
+
+.container-fluid > .row > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#text > .row > .col-12 > h1{
+    color: lavenderblush;
+    font-family: Poppins, sans-serif;
+    font-size: 50px;
+}
+
+.container-fluid > .typeform-widget{
+    padding-top: 20%;
+    height: 100%;
+    width: 40%;
+}

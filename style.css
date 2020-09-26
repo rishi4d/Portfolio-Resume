@@ -629,9 +629,17 @@ hr{
 }
 
 .footer{
+    position: relative;
     height: 36%;
     width: 100%;
     background-color:rgb(75, 83, 196);
+}
+
+.footer > .row > .col-12{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 #aequote{
@@ -1314,7 +1322,7 @@ hr{
     }
 
     #welcome > .row > .col-12 > h2{
-        padding-top: 10px;
+        padding-top: 20px;
         font-size: 48px;
     }
     
@@ -1457,7 +1465,7 @@ hr{
 @media(min-width: 1600px){
 
     #welcome > .row > .col-12 > h2{
-        padding-top: 10px;
+        padding-top: 15px;
         font-size: 50px;
     }
 
@@ -1555,12 +1563,10 @@ hr{
     }
 
     .footer{
-        margin-top: 7%;
         padding: 0 25%;
     }
 
     #aequote{
-        margin-top: 4.5%;
         font-size: 32px;
     }
 
@@ -1576,7 +1582,7 @@ hr{
     }
 
     #copyri8{
-        padding-top: 2%;
+        padding-top: 1.5%;
         font-size: 20px;
     }
 }
