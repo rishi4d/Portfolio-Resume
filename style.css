@@ -353,8 +353,9 @@ canvas {
 
 #pf-item > h3{
     padding-top: 5%;
-    font-size: 28px;
-    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
     color: rgb(180, 180, 180);
 }
 
@@ -653,7 +654,7 @@ hr{
 }
 
 #socialicons > a > i{
-    border: 1px solid rgb(75, 83, 196);
+    border: 2px dotted rgb(75, 83, 196);
     border-radius: 50%;
     text-align: center;
 }
@@ -736,7 +737,7 @@ hr{
 
     #pf-item > h3{
         padding-top: 2%;
-        font-size: 24px;
+        font-size: 26px;
     }
     
     #pf-item > p{
@@ -893,7 +894,7 @@ hr{
     } 
 
     #pf-item > h3{
-        font-size: 24px;
+        font-size: 27px;
         padding-top: 3%;
 
     }
@@ -1052,7 +1053,7 @@ hr{
 
     #pf-item > h3{
         padding-top: 5%;
-        font-size: 25px;
+        font-size: 28px;
     }
     
     #pf-item > p{
@@ -1203,7 +1204,7 @@ hr{
 
     #pf-item > h3{
         padding-top: 5%;
-        font-size: 26px;
+        font-size: 30px;
     }
     
     #pf-item > p{
@@ -1351,7 +1352,7 @@ hr{
 
     #pf-item > h3{
         padding-top: 15%;
-        font-size: 28px;
+        font-size: 29px;
     }
     
     #pf-item > p{
