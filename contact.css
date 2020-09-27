@@ -51,6 +51,19 @@ body{
     font-size: 34px;
 }
 
+#back{
+    text-align: center;
+    margin-top: 0.9em;
+    font-size: 16px;
+    color: rgb(185, 185, 185);
+    float: right;
+}
+
+#back:hover{
+    text-decoration: none;
+    color: rgb(11, 123, 250);
+}
+
 .fa-twitter:hover{
     color:  #00acee;
 }
@@ -90,6 +103,10 @@ body{
         padding-left: 1.5%;
         padding-right: 1.5%;
     }
+
+    #back{
+        width: 25%;
+    }
 }
 
 @media(min-width: 768px){
@@ -114,6 +131,10 @@ body{
     #icons > .a{
         padding-left: 1%;
         padding-right: 1%;
+    }
+
+    #back{
+        width: 25%;
     }
 }
 
@@ -140,6 +161,10 @@ body{
         padding-left: 1%;
         padding-right: 1%;
     }
+
+    #back{
+        width: 25%;
+    }
 }
 
 @media(min-width: 992px){
@@ -164,6 +189,10 @@ body{
     #icons > .a{
         padding-left: 1.2%;
         padding-right: 1.2%;
+    }
+
+    #back{
+        width: 25%;
     }
 }
 
@@ -190,6 +219,10 @@ body{
         padding-left: 1.5%;
         padding-right: 1.5%;
     }
+
+    #back{
+        width: 30%;
+    }
 }
 
 @media(min-width: 1600px){
@@ -214,6 +247,10 @@ body{
     #icons > .a{
         padding-left: 1.5%;
         padding-right: 1.5%;
+    }
+
+    #back{
+        width: 32%;
     }
 }
 

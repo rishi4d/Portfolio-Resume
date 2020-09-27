@@ -1,7 +1,7 @@
 //Loader
-function execloader(){
-    setTimeout(showPage, 1600);
-    setTimeout(loadjq, 1600);
+function execloader(timeperiod1,timeperiod2){
+    setTimeout(showPage, timeperiod1);
+    setTimeout(loadjq, timeperiod2);
 }
 
 //JS Driver
