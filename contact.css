@@ -54,6 +54,10 @@ body{
     font-size: 34px;
 }
 
+#icons > a{
+    color: rgb(195, 195, 195);
+}
+
 #back{
     text-align: center;
     margin-top: 0.9em;
@@ -69,6 +73,10 @@ body{
 
 .fa-twitter:hover{
     color:  #00acee;
+}
+
+.fa-reddit-alien:hover{
+    color: #FF5700;
 }
 
 .fa-linkedin-in:hover{
