@@ -95,15 +95,15 @@ function showPage(){
 
     // stars
     function Star(options) {
-        this.size = Math.random() * 2;
-        this.speed = Math.random() * .05;
+        this.size = Math.random() * 2.1;
+        this.speed = Math.random() * 0.09;
         this.x = options.x;
         this.y = options.y;
     }
 
     Star.prototype.reset = function () {
-        this.size = Math.random() * 2;
-        this.speed = Math.random() * .05;
+        this.size = Math.random() * 2.1;
+        this.speed = Math.random() * 0.09;
         this.x = width;
         this.y = Math.random() * height;
     }
@@ -125,8 +125,8 @@ function showPage(){
         this.x = Math.random() * width;
         this.y = 0;
         this.len = (Math.random() * 60) + 8;
-        this.speed = (Math.random() * 5) + 5;
-        this.size = (Math.random() * 1) + 0.1;
+        this.speed = (Math.random() * 4) + 5;
+        this.size = (Math.random() * 1) + 0.3;
         // this is used so the shooting stars arent constant
         this.waitTime = new Date().getTime() + (Math.random() * 3000) + 500;
         this.active = false;
@@ -155,7 +155,7 @@ function showPage(){
     var entities = [];
 
     // init the stars
-    for (var i = 0; i < height-350; i++) {
+    for (var i = 0; i < (height*0.6+width*1.3)/5; i++) {
         entities.push(new Star({
             x: Math.random() * width,
             y: Math.random() * height
